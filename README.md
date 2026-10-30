@@ -1,32 +1,98 @@
-# React + TypeScript + Vite
+# NexaSpace – Single Page Application (SPA)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+NexaSpace is a modern, responsive Single Page Application built with React, TypeScript, and Vite. It demonstrates client-side navigation, reusable components, shared state management, and responsive web design.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Single Page Application:** Navigate between pages without reloading the browser.
+- **React Router:** Client-side routing for Home, About, and Contact pages.
+- **React Context API:** Shared state management across components.
+- **Contact Form:** Interactive form with input handling and validation.
+- **Responsive Design:** Layout adapts to different screen sizes.
+- **Modern UI:** Clean interface with smooth navigation and styling.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- React Router DOM
+- CSS3
+- React Context API
 
-## Expanding the Oxlint configuration
+##  Project Structure
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```text
+nexaspace-spa/
+├── public/
+├── src/
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── About.tsx
+│   │   └── Contact.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+##  Installation and Setup
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+Navigate into the project:
+
+```bash
+cd nexaspace-spa
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+##  Deployment
+
+The application can be deployed using Vercel.
+
+Build command:
+
+```bash
+npm run build
+```
+
+Output directory:
+
+```text
+dist
+```
+
+##  Project Objective
+
+This project was developed as part of the Codveda Technology Internship to demonstrate practical skills in building Single Page Applications using React, TypeScript, React Router, and React Context API.
+
+## Author
+
+**Isaac Alagi**
+
+Computer Science Student | Frontend Developer
+
+GitHub: [Your GitHub Profile](https://github.com/isaacalagi27-zic)
+
+---
+
+*Built with React, TypeScript, and Vite.*
